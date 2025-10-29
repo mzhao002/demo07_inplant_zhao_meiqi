@@ -17,7 +17,7 @@ class SiteNavbar extends HTMLElement {
            <nav class="navbar navbar-expand-lg bg-success-subtle">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./images/logo.png" height="36" />
+            <img src="./images/logo.jpg" height="60" />
             Meiqi's Hiking App
           </a>
           <button
