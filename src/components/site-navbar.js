@@ -18,7 +18,7 @@ class SiteNavbar extends HTMLElement {
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./images/logo.png" height="36" />
-            Meiqi's Online Plant Store
+            Meiqi's Hiking App
           </a>
           <button
             class="navbar-toggler"
