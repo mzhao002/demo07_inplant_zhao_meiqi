@@ -1,1 +1,22 @@
+.card-container {
+  max-height: 350px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #eafee8;
+}
 
+.card {
+  width: 45%;
+  margin: 2%;
+  padding: 15px;
+  background-color: #b9f2ef;
+  border-radius: 10px;
+}
+
+.card p {
+  color: #333;
+  font-size: 14px;
+}
