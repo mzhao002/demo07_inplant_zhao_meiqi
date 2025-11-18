@@ -5,14 +5,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
-  background-color: #eafee8;
+  background-color: #f6fff5;
 }
 
 .card {
   width: full;
   margin: 2%;
   padding: 15px;
-  background-color: #f0f0f0;
+  background-color: #f5fbf0;
   border-radius: 10px;
 }
 
