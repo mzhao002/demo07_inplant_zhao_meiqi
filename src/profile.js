@@ -17,6 +17,13 @@ function populateUserInfo() {
           document.getElementById("schoolInput").value = school;
           document.getElementById("cityInput").value = city;
 
+          const emailInput = document.getElementById("emailInput");
+          emailInput.value = user.email || "";
+          emailInput.readOnly = true;
+          emailInput.style.backgroundColor = "#f0f0f0";
+          emailInput.style.color = "#555";
+          emailInput.style.cursor = "not-allowed";
+
           document.getElementById("personalInfoFields").disabled = true;
         } else {
           console.log("No such document!");
@@ -30,10 +37,12 @@ function populateUserInfo() {
   });
 }
 
+// Edit
 document.querySelector("#editButton").addEventListener("click", () => {
   document.getElementById("personalInfoFields").disabled = false;
 });
 
+// Save
 document.querySelector("#saveButton").addEventListener("click", async () => {
   const user = auth.currentUser;
   if (!user) {
@@ -47,13 +56,8 @@ document.querySelector("#saveButton").addEventListener("click", async () => {
 
   try {
     const userRef = doc(db, "users", user.uid);
-    await updateDoc(userRef, {
-      name,
-      school,
-      city,
-    });
+    await updateDoc(userRef, { name, school, city });
     console.log("User info updated successfully!");
-
     document.getElementById("personalInfoFields").disabled = true;
   } catch (error) {
     console.error("Error updating user info:", error);

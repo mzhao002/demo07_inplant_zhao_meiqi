@@ -9,14 +9,18 @@
 }
 
 .card {
-  width: 45%;
+  width: full;
   margin: 2%;
   padding: 15px;
-  background-color: #b9f2ef;
+  background-color: #f0f0f0;
   border-radius: 10px;
 }
 
 .card p {
   color: #333;
   font-size: 14px;
+}
+
+.material-icons {
+  cursor: pointer;
 }
